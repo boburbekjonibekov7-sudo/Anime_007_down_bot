@@ -1,2 +1,5 @@
-anime_bot.db 
-*.db 
+anime_bot.db
+*.db-shm
+*.db-wal
+__pycache__/
+.env
