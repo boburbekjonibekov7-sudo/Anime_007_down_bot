@@ -7,6 +7,7 @@ class Config:
     BOT_TOKEN: str = os.getenv("BOT_TOKEN", "YOUR_BOT_TOKEN")
     ADMIN_IDS: list = None
     DB_PATH: str = "anime_bot.db"
+    DATABASE_URL: str = os.getenv("DATABASE_URL", "")
 
     # Rate limiting
     RATE_LIMIT: float = 0.5        # seconds between messages
