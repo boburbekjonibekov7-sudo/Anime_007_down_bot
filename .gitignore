@@ -1,5 +1,2 @@
-__pycache__/
-*.pyc
-anime_bot.db
-bot.log
-.env
+anime_bot.db 
+*.db 
