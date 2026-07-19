@@ -4,7 +4,7 @@ from dataclasses import dataclass, field
 
 @dataclass
 class Config:
-    BOT_TOKEN: str = os.getenv("BOT_TOKEN", "8719707916:AAGA3lrQAyIPWwXrQh4tOnVuH5lCHFDDIbQ")
+    BOT_TOKEN: str = os.getenv("BOT_TOKEN", "YOUR_BOT_TOKEN")
     ADMIN_IDS: list = None
     DB_PATH: str = "anime_bot.db"
 
