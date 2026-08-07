@@ -7,6 +7,10 @@ import sys
 # Repo ildizini sys.path'ga qo'shish (config, database, bot_factory import qilish uchun)
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+# Vercel serverless: fayl tizimi o'qish uchun, faqat /tmp yozish mumkin.
+# SQLite ma'lumotlar bazasi /tmp da saqlanadi (cold start'da tozalanadi - cheklov, pastga qarang).
+os.environ.setdefault("DB_PATH", "/tmp/anime_bot.db")
+
 from contextlib import asynccontextmanager
 
 from aiogram import Bot
