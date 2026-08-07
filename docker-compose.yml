@@ -1,0 +1,16 @@
+services:
+  bot:
+    build: .
+    container_name: anime-bot
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      # SQLite ma'lumotlar bazasi volume'da saqlanadi (restartda yo'qolmaydi)
+      - DB_PATH=/app/data/anime_bot.db
+    ports:
+      - "10000:10000"
+    volumes:
+      - bot_data:/app/data
+
+volumes:
+  bot_data:

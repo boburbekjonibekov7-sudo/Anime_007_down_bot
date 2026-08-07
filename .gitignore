@@ -1,5 +1,8 @@
 anime_bot.db
 *.db-shm
 *.db-wal
+data/
+bot.log
 __pycache__/
+.venv*/
 .env

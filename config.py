@@ -6,8 +6,16 @@ from dataclasses import dataclass, field
 class Config:
     BOT_TOKEN: str = os.getenv("BOT_TOKEN", "YOUR_BOT_TOKEN")
     ADMIN_IDS: list = None
-    DB_PATH: str = "anime_bot.db"
+    DB_PATH: str = os.getenv("DB_PATH", "anime_bot.db")
     DATABASE_URL: str = os.getenv("DATABASE_URL", "")
+
+    # Webhook (WEBHOOK_URL berilgan bo'lsa, bot webhook rejimida ishlaydi)
+    WEBHOOK_URL: str = os.getenv("WEBHOOK_URL", "")
+    WEBHOOK_PATH: str = os.getenv("WEBHOOK_PATH", "/webhook")
+    WEBHOOK_SECRET: str = os.getenv("WEBHOOK_SECRET", "")
+
+    # Server port (Render/Railway PORT ni avtomatik beradi)
+    PORT: int = int(os.getenv("PORT", "10000"))
 
     # Rate limiting
     RATE_LIMIT: float = 0.5        # seconds between messages

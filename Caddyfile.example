@@ -1,0 +1,9 @@
+# Caddy avtomatik HTTPS (Let's Encrypt) beradi - hech qanday sertifikat sozlamasi shart emas
+# 1) example.com ni o'zingizning domeningizga almashtiring
+# 2) Domen A record'ini server IP'ingizga yo'naltiring
+# 3) Caddy'ni ishga tushiring:  sudo apt install caddy  →  sudo caddy run --config Caddyfile
+# 4) .env da:  WEBHOOK_URL=https://example.com
+
+example.com {
+    reverse_proxy 127.0.0.1:10000
+}

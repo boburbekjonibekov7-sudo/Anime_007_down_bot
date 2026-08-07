@@ -1,0 +1,14 @@
+.git
+.gitignore
+.env
+.venv*/
+*.db
+*.db-shm
+*.db-wal
+__pycache__
+*.pyc
+bot.log
+data
+DEPLOY.md
+docker-compose.yml
+Caddyfile.example
