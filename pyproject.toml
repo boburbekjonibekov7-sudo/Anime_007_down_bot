@@ -2,7 +2,7 @@
 name = "anime-007-down-bot"
 version = "1.0.0"
 description = "Telegram anime bot with webhook (Vercel serverless)"
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 dependencies = [
     "aiogram==3.13.1",
     "aiosqlite==0.20.0",
