@@ -1,0 +1,3 @@
+[tool.vercel]
+# Vercel Python App: barcha so'rovlar (GET / va POST /webhook) shu ASGI app'ga keladi
+entrypoint = "api.webhook:app"
